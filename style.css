@@ -1,0 +1,209 @@
+/*ESTILOS GENERALES*/
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dancing+Script:wght@700&family=Roboto:wght@100&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("./img/patron2.jpeg");
+}
+
+/*FUENTES*/
+/*COLORES*/
+.color-fondo1 {
+  background-color: #afafc7;
+}
+
+/*ESTILOS CONTAINER*/
+#container {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 8% repeat(6, 1fr);
+  grid-template-areas: "header header" "contenido aside" "contenido aside" "contenido aside" "contenido aside" "contenido aside" "footer footer";
+  height: 1200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Crimson Text", serif;
+  font-size: 25px;
+  background-color: #a07575;
+}
+#container #header {
+  grid-area: header;
+  height: auto;
+}
+#container #header #navbar {
+  display: grid;
+  align-self: center;
+  margin-top: 10px;
+  background-color: #afafc7;
+}
+#container #header #navbar .generalUl {
+  margin-left: 109px;
+}
+#container #header #navbar a {
+  color: white;
+}
+#container #header #navbar #navbrand1 {
+  width: 100px;
+}
+#container #header #navbar #logo {
+  width: 70%;
+  height: 54px;
+}
+#container #content {
+  grid-area: contenido;
+  margin-top: 8px;
+}
+#container #content #row1 {
+  display: grid;
+  margin-top: 20px;
+}
+#container #content #row1 #carrusel {
+  justify-self: center;
+  overflow: hidden;
+}
+#container #content #row1 #carrusel .img-carrusel {
+  height: 300px;
+}
+#container #content #row1 #carrusel h5,
+#container #content #row1 #carrusel p {
+  color: white;
+  background-color: #973434;
+  text-align: center;
+  text-shadow: 3px 1px 4px black;
+  font-size: 15px;
+}
+#container #content #row2 {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+#container #content #row2 .fondo-titulo1 {
+  background: url("./img/adornoTitulo.jpg");
+  background-position: 319px 56px;
+  margin-top: 26px;
+  margin-left: 20px;
+  background-color: transparent;
+  height: 23px;
+}
+#container #content #row2 h2 {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Pattaya", sans-serif;
+  text-align: center;
+  border: 2px solid gray;
+  background-color: #612a2a;
+  transition: all 400ms;
+}
+#container #content #row2 h2:hover {
+  border: 2px solid #994975;
+  border-radius: 10px;
+}
+#container #content #row2 .fondo-titulo2 {
+  background: url("./img/adornoTitulo.jpg");
+  background-position: 319px 56px;
+  height: 23px;
+  margin-top: 26px;
+  background-color: transparent;
+}
+#container #content #sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+#container #content #sections .section {
+  height: 200px;
+}
+#container #content #sections a {
+  width: 100%;
+  height: 100%;
+}
+#container #content #sections img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+#container #aside {
+  grid-area: aside;
+  height: 90.5%;
+  margin-top: 26px;
+}
+#container #aside h5 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 0px 2px 1px black;
+  margin-top: 10px;
+}
+#container #aside #search {
+  margin-bottom: 15px;
+  color: #ccc;
+  background-color: #503c50;
+}
+#container #aside #login {
+  color: #ccc;
+  background-color: #503c50;
+  margin-bottom: 15px;
+}
+#container #aside #login .bntIngresar {
+  margin-left: 124px;
+}
+#container #aside #social {
+  height: auto;
+  background-color: #503c50;
+  color: #ccc;
+}
+#container #aside #social #facebook {
+  margin-top: 12px;
+  margin-left: 49px;
+}
+#container #aside #social #twitter {
+  margin-left: 49px;
+}
+#container #aside #social #youtube {
+  margin-left: 49px;
+}
+#container #aside #social .imgSocial {
+  width: 124px;
+  height: 78px;
+  margin-bottom: 12px;
+}
+#container #footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-area: footer;
+  background-color: rgba(82, 76, 136, 0.678);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+#container #footer #location iframe {
+  width: 70%;
+  height: 100px;
+  margin-left: 90px;
+  margin-top: 10px;
+  border-radius: 5px solid white;
+  box-shadow: 0px 0px 5px gray;
+}
+#container #footer #info p {
+  text-align: center;
+  margin-top: 53px;
+}
+#container #footer h5 {
+  width: 40%;
+  background-color: #afafc7;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 0px 2px 1px black;
+  margin-left: 170px;
+  margin-top: 10px;
+  color: #503c50;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

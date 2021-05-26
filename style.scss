@@ -1,0 +1,271 @@
+/*ESTILOS GENERALES*/
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("./img/patron2.jpeg");
+}
+
+/*FUENTES*/
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dancing+Script:wght@700&family=Roboto:wght@100&display=swap");
+
+$fuente-general: "Crimson Text", serif;
+$fuente-titular: "Pattaya", sans-serif;
+$fuente-label: "Dancing Script", cursive;
+
+/*COLORES*/
+$color-navbar: rgb(175, 175, 199);
+$color-form: rgb(80, 60, 80);
+.color-fondo1 {
+  background-color: $color-navbar;
+}
+
+/*ESTILOS CONTAINER*/
+#container {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 8% repeat(6, 1fr);
+  grid-template-areas:
+    "header header"
+    "contenido aside"
+    "contenido aside"
+    "contenido aside"
+    "contenido aside"
+    "contenido aside"
+    "footer footer";
+
+  height: 1200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: $fuente-general;
+  font-size: 25px;
+  background-color: rgb(160, 117, 117);
+
+  #header {
+    grid-area: header;
+
+    height: auto;
+
+    #navbar {
+      display: grid;
+
+      align-self: center;
+
+      margin-top: 10px;
+      background-color: $color-navbar;
+
+      .generalUl {
+        margin-left: 109px;
+      }
+
+      a {
+        color: white;
+      }
+
+      #navbrand1 {
+        width: 100px;
+      }
+
+      #logo {
+        width: 70%;
+        height: 54px;
+      }
+    }
+  }
+
+  #content {
+    grid-area: contenido;
+
+    margin-top: 8px;
+
+    #row1 {
+      display: grid;
+
+      margin-top: 20px;
+
+      #carrusel {
+        justify-self: center;
+        overflow: hidden;
+
+        .img-carrusel {
+          height: 300px;
+        }
+
+        h5,
+        p {
+          color: white;
+          background-color: rgb(151, 52, 52);
+          text-align: center;
+          text-shadow: 3px 1px 4px black;
+          font-size: 15px;
+        }
+      }
+    }
+
+    #row2 {
+      margin-top: 30px;
+      margin-left: 20px;
+
+      .fondo-titulo1 {
+        background: url("./img/adornoTitulo.jpg");
+        background-position: 319px 56px;
+        margin-top: 26px;
+        margin-left: 20px;
+        background-color: transparent;
+        height: 23px;
+      }
+
+      h2 {
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        font-family: $fuente-titular;
+        text-align: center;
+        border: 2px solid gray;
+        background-color: rgb(97, 42, 42);
+        transition: all 400ms;
+      }
+
+      h2:hover {
+        border: 2px solid rgb(153, 73, 117);
+        border-radius: 10px;
+      }
+
+      .fondo-titulo2 {
+        background: url("./img/adornoTitulo.jpg");
+        background-position: 319px 56px;
+        height: 23px;
+        margin-top: 26px;
+
+        background-color: transparent;
+      }
+    }
+
+    #sections {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+
+      margin-top: 20px;
+      margin-right: 15px;
+
+      .section {
+        height: 200px;
+      }
+      a {
+        width: 100%;
+        height: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  #aside {
+    grid-area: aside;
+    height: 90.5%;
+
+    margin-top: 26px;
+
+    h5 {
+      text-align: center;
+      font-size: 35px;
+      font-weight: bold;
+      text-decoration: underline;
+      text-shadow: 0px 2px 1px black;
+      margin-top: 10px;
+    }
+
+    #search {
+      margin-bottom: 15px;
+      color: #ccc;
+      background-color: $color-form;
+    }
+
+    #login {
+      color: #ccc;
+      background-color: $color-form;
+      margin-bottom: 15px;
+
+      .bntIngresar {
+        margin-left: 124px;
+      }
+    }
+
+    #social {
+      height: auto;
+      background-color: $color-form;
+      color: #ccc;
+
+      #facebook {
+        margin-top: 12px;
+        margin-left: 49px;
+      }
+
+      #twitter {
+        margin-left: 49px;
+      }
+
+      #youtube {
+        margin-left: 49px;
+      }
+
+      .imgSocial {
+        width: 124px;
+        height: 78px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  #footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: footer;
+    background-color: rgba(82, 76, 136, 0.678);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    #location {
+      
+
+      iframe {
+        width: 70%;
+        height: 100px;
+        margin-left: 90px;
+        margin-top: 10px;
+        border-radius: 5px solid white;
+        box-shadow: 0px 0px 5px gray;
+      }
+    }
+
+    #info{
+
+        p{
+            text-align: center;
+            margin-top: 53px;
+        }
+    }
+
+    h5 {
+
+        width: 40%;
+        background-color: $color-navbar;
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+        text-decoration: underline;
+        text-shadow: 0px 2px 1px black;
+        margin-left: 170px;
+        margin-top: 10px;
+        color: $color-form;
+        border-radius: 20px;
+      }
+  }
+}

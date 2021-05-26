@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="icon" href="./img/leonardo.jpg" type="favicon/x-icon">
+    <title>Ground Zero</title>
+</head>
+
+<body>
+
+    <div id="container" class="container shadow-lg border border-dark rounded">
+        <header id="header">
+            <!--Inicio navbar-->
+            <nav id="navbar" class="navbar navbar-expand-lg border rounded shadow ">
+                <div class="container-fluid">
+                    <a id="navbrand1" class="navbar-brand " href="#"><img id="logo" class="logo"
+                            src="./img/leonardo.jpg" alt="leonardo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 generalUl">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Galeria</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Articulos
+                                </a>
+                                <ul class="dropdown-menu color-fondo1" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Pinturas</a></li>
+                                    <li><a class="dropdown-item" href="#">Esculturas</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Personaliza tu pedido</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Contactanos</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <!--Fin navbar-->
+        </header>
+
+        <!--INICIO CONTENT-->
+        <div id="content">
+            <div id="row1" class="row">
+                <div id="carrusel" class="col-6">
+                    <!--Inicio carrusel-->
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/pintura1.jpg" class="d-block w-100 img-carrusel" alt="noche">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="border rounded">Siente el poder de la noche</h5>
+                                    <p class="border rounded">Una noche estrellada</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/pintura2.jpeg" class="d-block w-100 img-carrusel" alt="venus">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="border rounded">Lazo dios adan</h5>
+                                    <p class="border rounded">Mira esas cuerpas papaa</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/pintura3.jpeg" class="d-block w-100 img-carrusel" alt="adan">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="border rounded">Nacimiento de venus</h5>
+                                    <p class="border rounded">Si, asi es. Nacio sobre una conchita</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!--Fin carrusel-->
+
+                </div>
+
+            </div>
+
+            <div id="row2" class="row">
+                <div class="col-3 fondo-titulo1 border rounded">
+
+                </div>
+
+                <div class="col-5">
+                    <h2>Contenido destacado</h2>
+                </div>
+
+                <div class="col-3 fondo-titulo2 border rounded">
+
+                </div>
+
+            </div>
+
+            <section id="sections">
+                <article class="section section1 shadow-lg">
+                    <!-- Button trigger modal -->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="./img/article1.jpeg" alt="">
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">La persistencia de la memoria</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Autor: Salvador Dalí
+                                    <br>Año: 1931
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Pide aqui</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </article>
+
+                <article class="section section2 shadow-lg">
+                    <!-- Button trigger modal -->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#Modal2">
+                        <img src="./img/article2.jpeg" alt="">
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="ModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel2">La joven de la Perla</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Autor: Johaness Vermeer
+                                    <br>Año: Desconocido
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Pide aqui</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="section section3 shadow-lg">
+                    <!-- Button trigger modal -->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <img src="./img/article3.jpeg" alt="">
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel3">Gótico estadounidense</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Autor: Grant Wood
+                                    <br>Año: 1930
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Pide aqui</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="section section4 shadow-lg">
+                    <!-- Button trigger modal -->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#modal4">
+                        <img src="./img/article4.jpeg" alt="">
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="ModalLabel4" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel2">Los amantes</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Autor: Rene Magritte
+                                    <br>Año: 1928
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Pide aqui</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="section section5 shadow-lg">
+                    <!-- Button trigger modal -->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#Modal5">
+                        <img src="./img/article5.jpeg" alt="">
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="ModalLabel5" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel5">Abundancia</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Autor: Desconocido
+                                    <br>Año: Desconocido
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Pide aqui</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="section section6 shadow-lg">
+                    <!-- Button trigger modal -->
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#Modal6">
+                        <img src="./img/article6.jpeg" alt="">
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="ModalLabel6" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel6">El beso</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Autor: Gustav Klimt
+                                    <br>Año: 1908
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+
+            </section>
+
+
+
+        </div>
+        <!--FIN CONTENT-->
+
+        <!--INICIO BARRA LATERAL-->
+        <aside id="aside">
+            <div id="search" class=" border border-dark rounded shadow">
+                <h5>Busqueda</h5>
+                <form class=" d-flex container">
+                    <input class="form-control me-2 mb-2" type="search" placeholder="Buscar aqui" aria-label="Search">
+                    <button class="btn btn-outline-success mb-2" type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <div id="login" class="border border-dark rounded  shadow">
+                <h5>Iniciar sesion</h5>
+                <form class="container">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+                        <input type="email" class="form-control" placeholder="ejemplo@direccion.etc"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" placeholder="***********"
+                            id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Recordar cuenta</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2 bntIngresar">Ingresar</button>
+                </form>
+            </div>
+
+            <div id="social" class="border border-dark rounded  shadow">
+                <h5>Redes sociales</h5>
+                <div id="facebook">
+                    <a href="#"><img class="imgSocial" src="./img/Ficon.png" alt="facebook"></a>
+                </div>
+
+                <div id="twitter">
+                    <a href="#"><img class="imgSocial" src="./img/Ticon.png" alt="twitter"></a>
+                </div>
+
+                <div id="youtube">
+                    <a href="#"><img class="imgSocial" src="./img/Yicon.png" alt="youtube"></a>
+                </div>
+
+            </div>
+
+
+        </aside>
+        <!--FIN BARRA LATERAL-->
+
+        <footer id="footer" class="border border-dark shadow-lg">
+            <div id="location">
+                <h5>¿Donde estamos?</h5>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.475028077279!2d-70.63662338508342!3d-33.43692850420402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf95f570db63%3A0x8f3e520276210f1a!2sPlaza%20Baquedano!5e0!3m2!1ses-419!2scl!4v1621199823394!5m2!1ses-419!2scl"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div id="info">
+                <h5>Autores</h5>
+                <p>&copy; Jose Valdebenito & Leandro Collao</p>
+            </div>
+        </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+a
